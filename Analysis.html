@@ -11,112 +11,138 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Analyse</title>
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="heading border_Class">
-            <h1> Score calculator and result analysis </h1>
+
+    <div class="heading">
+        <h1> Score calculator and result analyser </h1>
+    </div>
+
+    <div class="container1 row">
+        <div class="weWillProvide col-4">
+            <p id="p1">Fill this form to know </p>
+            <!-- <p id="p2"> -->
+            <ul id="ul1">
+                <li>Total marks and Subject wise marks</li>
+                <li>right and wrong attempts</li>
+                <li>Exam Analysis</li>
+            </ul>
+
         </div>
-        <div class="weWillProvide">
-            <p>Know your subject-wise and overall marks instantly.
-            </p>
-        </div>
-        <div class="row">
-            <div class="inputform col">
-                <form>
-                    <div class="form-group padding_Class">
-                        <input type="text" class="form-control" id="URL" placeholder="Enter Your Exam URL HERE">
-                    </div>
-                    <div class="form-group padding_Class">
-                        <select id="catagory" class="form-control">
-                            <option value="">Select Catagory</option>
-                            <option value="">UR</option>
-                            <option value="">EWS</option>
-                            <option value="">OBC</option>
-                            <option value="">SC</option>
-                            <option value="">ST</option>
-                        </select>
-                    </div>
-                    <div class="form-group padding_Class">
-                        <select id="VerticalReservation" class="form-control">
-                            <option value="">Select Vertical Reservation</option>
-                            <option value="">ESM</option>
-                            <option value="">OH</option>
-                            <option value="">HHC</option>
-                            <option value="">VH</option>
-                            <option value="">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group padding_Class">
-                        <div class="padding_Class">
-                            <label>Language :</label>
-                            <input type="radio" selected class="margin_Class" name="lang">English
-                            <input type="radio" class="margin_Class" name="lang">HIndi
-                        </div>
-                    </div>
-                    <div class="form-group padding_Class">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <button class="btn btn-primary" onClick="showgrid()"> Calculate </button>
-                </form>
+        <div class="telegram col-3">
+            <a class="logo" href="https://t.me/RBE_S">
+                <img src="image/telegram_logo.png" alt="reload" style="height: 15vh; width: 15vh;">
+            </a>
+            <div class="tele">
+                <p><b>TELEGRAM</b> <br>Join for Queston Paper Pdfs</p>
             </div>
-            <div class="infoNote col">
-                <h4>We will provide the following analysis & facilities soon:
-                </h4>
-                <ol>
-                    <li>Average score in different shifts will be provided to know the level of examination.</li>
-                    <li>Will implement normalization formulae on the data to let you know your expected normalized
-                        marks.</li>
-                    <li> Your category-rank and overall rank on the basis of raw and normalized score of your shift in
-                        our survey will be discussed.</li>
-                    <li>Section-wise average scores of different shifts to know the level of different subjects.</li>
-                    <li>Rank, overall and category-wise out of the total aspirants participated in the survey.</li>
-                    <li> High scorer marks without revealing their personal information to know the level of
-                        competition.</li>
-                    <li>Expected Cutoff (if possible).</li>
-                    <li>Subject-wise, shift-wise and all shifts compiled pdfs in the language of question papers.</li>
-                    <li>Mock tests of PYQs (if possible).</li>
-                </ol>
-
-
+        </div>
+        <div class="youtube  col-3">
+            <a class="logo " href="https://www.youtube.com/c/RBERevolutionByEducation">
+                <img src="image/youtube_logo.png" alt="reload" style="height: 15vh; width: 15vh;">
+            </a>
+            <div class="yout">
+                <p><b>YOUTUBE</b> <br>Subscribe for free video classes and Job Updates</p>
             </div>
 
-        </div>
-        <div class="resultdata padding_Class">
-            <table id="datagrid">
-                <tr>
-                    <th>Section Name</th>
-                    <th>Right Answers</th>
-                    <th> Wrong Answers</th>
-                    <th>Unattempted Questions</th>
-                    <th>Total Questions</th>
-                    <th>Marks</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                    <td>Germany</td>
-                </tr>
-            </table><br>
-            <h4>Total marks:</h4>
         </div>
     </div>
+    <div class="container1 row">
+        <div class="inputform col-5">
+            <form>
+                <div class="form-group padding_Class">
+                    <input type="text" class="form-control border_Class" id="URL"
+                        placeholder="Enter Your Exam URL HERE">
+                </div>
+                <div class="form-group padding_Class">
+                    <select id="catagory" class="form-control border_Class">
+                        <option value="">Select Catagory</option>
+                        <option value="">UR</option>
+                        <option value="">EWS</option>
+                        <option value="">OBC</option>
+                        <option value="">SC</option>
+                        <option value="">ST</option>
+                    </select>
+                </div>
+                <div class="form-group padding_Class">
+                    <select id="VerticalReservation" class="form-control border_Class">
+                        <option value="">Select Vertical Reservation</option>
+                        <option value="">ESM</option>
+                        <option value="">OH</option>
+                        <option value="">HHC</option>
+                        <option value="">VH</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="form-group padding_Class">
+                    <div class="padding_Class">
+                        <label>Language :</label>
+                        <input type="radio" selected class="margin_Class" name="lang">English
+                        <input type="radio" class="margin_Class" name="lang">HIndi
+                    </div>
+                </div>
+                <div class="form-group padding_Class">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control border_Class" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <button class="btn btn-primary" onClick="showgrid()"> Calculate </button>
+            </form>
+        </div>
+        <div class="infoNote col-5">
+            <h4>We will provide the following analysis & facilities soon:
+            </h4>
+            <ol>
+                <li>Average score in different shifts will be provided to know the level of examination.</li>
+                <li>Will implement normalization formulae on the data to let you know your expected normalized
+                    marks.</li>
+                <li> Your category-rank and overall rank on the basis of raw and normalized score of your shift in
+                    our survey will be discussed.</li>
+                <li>Section-wise average scores of different shifts to know the level of different subjects.</li>
+                <li>Rank, overall and category-wise out of the total aspirants participated in the survey.</li>
+                <li> High scorer marks without revealing their personal information to know the level of
+                    competition.</li>
+                <li>Expected Cutoff (if possible).</li>
+                <li>Subject-wise, shift-wise and all shifts compiled pdfs in the language of question papers.</li>
+                <li>Mock tests of PYQs (if possible).</li>
+            </ol>
+
+
+        </div>
+
+    </div>
+
+    <table id="datagrid">
+        <thead>
+            <tr>
+                <th>Section Name</th>
+                <th>Right Answers</th>
+                <th> Wrong Answers</th>
+                <th>Unattempted Questions</th>
+                <th>Total Questions</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody id="/">
+            <tr>
+                <td>Maths</td>
+                <td>20 </td>
+                <td>5</td>
+                <td>0</td>
+                <td>25</td>
+                <td>37.5</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <h4 id="h2">Total marks:</h4>
+
+
 
 
 
