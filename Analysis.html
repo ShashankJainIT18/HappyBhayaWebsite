@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="analysis.css">
+    <title>Analyse</title>
+
+</head>
+
+<body>
+
+    <div class="heading_container">
+        <h1 id="top_heading"> Score calculator and result analyzer </h1>
+    </div>
+    <div class="weWillProvide">
+        <p id="p1">Fill this form to know </p>
+
+        <ul id="ul1">
+            <li>Total marks and Subject wise marks</li>
+            <li>right and wrong attempts</li>
+            <li>Exam Analysis</li>
+        </ul>
+
+    </div>
+
+
+
+    <div class="inputform">
+        <form>
+            <div class="form-group padding_Class">
+                <input type="text" class="form-control" style=" margin: 2vh auto;" id="URL"
+                    placeholder="Enter Your Exam URL HERE">
+            </div>
+            <div class="form-group" style=" margin: 2vh auto;">
+                <select id="catagory" class="form-control border_Class">
+                    <option value="">Select Catagory</option>
+                    <option value="">UR</option>
+                    <option value="">EWS</option>
+                    <option value="">OBC</option>
+                    <option value="">SC</option>
+                    <option value="">ST</option>
+                </select>
+            </div>
+            <div class="form-group " style=" margin: 2vh auto;">
+                <select id="VerticalReservation" class="form-control border_Class">
+                    <option value="">Select Vertical Reservation</option>
+                    <option value="">ESM</option>
+                    <option value="">OH</option>
+                    <option value="">HHC</option>
+                    <option value="">VH</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+            <div class="form-group" style=" margin: 2vh auto;">
+                <div class="padding_Class">
+                    <label>Language : &nbsp;&nbsp; </label>
+                    <input type="radio" selected class="margin_Class" name="lang">&nbsp;&nbsp;English &nbsp;&nbsp;
+                    <input type="radio" class="margin_Class" name="lang">&nbsp;&nbsp;HIndi
+                </div>
+            </div>
+            <div class="form-group" style=" margin: 2vh auto;">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control border_Class" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <button class="form_button" onClick="showgrid()">
+                Calculate </button>
+        </form><br>
+
+        <div class="link_container">
+            <div class="telegram_logo">
+                <a class="logo" href="https://t.me/RBE_S">
+                    <img class="img_tele" src="image/telegram_logo.png" alt="reload">
+                </a>
+                <div class="tele_info">
+                    <p><b>TELEGRAM</b> <br>Join for Queston Paper Pdfs</p>
+                </div>
+            </div>
+            <div class="youtube_logo">
+                <a class="logo " href="https://www.youtube.com/c/RBERevolutionByEducation">
+                    <img class="img_yout" src="image/youtube_logo.png" alt="reload">
+                </a>
+                <div class="yout_info">
+                    <p><b>YOUTUBE</b> <br>Subscribe for free video classes and Job Updates</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <table id="datagrid">
+        <thead>
+            <tr>
+                <th>Section Name</th>
+                <th>Right Answers</th>
+                <th> Wrong Answers</th>
+                <th>Unattempted Questions</th>
+                <th>Total Questions</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody id="/">
+            <tr>
+                <td>Maths</td>
+                <td>20 </td>
+                <td>5</td>
+                <td>0</td>
+                <td>25</td>
+                <td>37.5</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <h4 id="h2">Total marks:</h4><br>
+    <div class="infoNote">
+        <h4>We will provide the following analysis & facilities soon:
+        </h4>
+        <ol>
+            <li>Average score in different shifts will be provided to know the level of examination.</li>
+            <li>Will implement normalization formulae on the data to let you know your expected normalized
+                marks.</li>
+            <li> Your category-rank and overall rank on the basis of raw and normalized score of your shift in
+                our survey will be discussed.</li>
+            <li>Section-wise average scores of different shifts to know the level of different subjects.</li>
+            <li>Rank, overall and category-wise out of the total aspirants participated in the survey.</li>
+            <li> High scorer marks without revealing their personal information to know the level of
+                competition.</li>
+            <li>Expected Cutoff (if possible).</li>
+            <li>Subject-wise, shift-wise and all shifts compiled pdfs in the language of question papers.</li>
+            <li>Mock tests of PYQs (if possible).</li>
+        </ol>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+<!-- <script>
+    function showgrid() {
+        debugger;
+        $("#datagrid").prop("hidden", true);
+    }
+</script> -->
+
+</html>
